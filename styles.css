@@ -101,69 +101,72 @@ h2{
 .reserve-btn:hover{background:#0d9996;color:#fff}
 
 /* Hero */
-.hero-section{
-  position:relative;
-  min-height:610px;
-  background:url("assets/hero.svg") center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  margin-top:78px;
+.hero-section {
+  margin-top: 78px;
+  padding: 45px 0;
+  background: var(--white);
 }
 
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,rgba(5,18,24,.88) 0%,rgba(5,18,24,.62) 32%,rgba(5,18,24,.12) 65%,rgba(5,18,24,0) 100%);
+.hero-image {
+  width: 90%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0 60px 0 60px;
 }
 
-.hero-content{
-  position:relative;
-  z-index:2;
+.hero-content {
+  width: 100%;
+  padding: 4rem;
 }
 
-.script-title{
-  font-family:Georgia,serif;
-  font-style:italic;
-  color:#14c0b7;
-  font-size:2.5rem;
-  margin:0 0 -8px;
+.script-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #0ea5a8;
+  font-size: 2.4rem;
+  margin-bottom: 0;
 }
 
-.hero-section h1{
-  color:#fff;
-  font-size:clamp(4.2rem,9vw,8rem);
-  line-height:.9;
-  font-weight:900;
-  letter-spacing:.05em;
-  text-shadow:0 4px 18px rgba(0,0,0,.35);
+.hero-content h1 {
+  font-size: clamp(4rem, 7vw, 6.5rem);
+  font-weight: 900;
+  letter-spacing: .04em;
+  color: #071821;
+  margin-bottom: .75rem;
 }
 
-.hero-section h2{
-  color:#fff;
-  font-size:1.45rem;
-  margin:18px 0;
+.hero-content h2 {
+  font-size: 1.35rem;
+  color: #071821;
+  margin-bottom: 1.5rem;
 }
 
-.hero-copy{
-  max-width:560px;
-  color:#fff;
-  font-size:1.1rem;
-  line-height:1.75;
+.hero-copy {
+  color: #5f6c72;
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 2rem;
 }
 
-.explore-btn{
-  margin-top:10px;
-  background:#11aeb0;
-  color:#fff;
-  border-radius:4px;
-  padding:15px 28px;
-  font-weight:800;
+.explore-btn {
+  background: #10a7aa;
+  color: #fff;
+  border-radius: 4px;
+  padding: 14px 26px;
+  font-weight: 800;
 }
 
-.explore-btn:hover{background:#0d8f91;color:#fff}
+.explore-btn:hover {
+  background: #087d80;
+  color: #fff;
+}
 
 /* About */
-.about-section{background:#fff}
+.about-section{
+  background: var(--cream);
+}
 
 .about-section h2{font-size:2.6rem}
 
@@ -474,13 +477,18 @@ h2{
     border-bottom:0;
   }
 
-  .hero-section{
-    margin-top:72px;
-    min-height:560px;
+  .hero-image {
+    height: 420px;
   }
 
-  .hero-overlay{
-    background:rgba(5,18,24,.62);
+  .hero-content {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .hero-copy {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section-heading{
