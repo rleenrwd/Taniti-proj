@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit Taniti</title>
+  <meta name="description" content="Discover Taniti lodging, transportation, beaches, rainforest adventures, dining, and visitor information.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-icon"><i class="bi bi-tree-fill"></i></span>
+        <span class="brand-text">
+          <small>VISIT</small>
+          <strong>TANITI</strong>
+        </span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lodging">LODGING</a></li>
+          <li class="nav-item"><a class="nav-link" href="#transportation">TRANSPORTATION</a></li>
+          <li class="nav-item"><a class="nav-link" href="#entertainment">ENTERTAINMENT</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="btn reserve-btn" href="reserve.html">RESERVE NOW</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-7">
+            <p class="script-title">Welcome to</p>
+            <h1>TANITI</h1>
+            <h2>YOUR PERFECT ISLAND ESCAPE</h2>
+            <p class="hero-copy">
+              Discover pristine beaches, lush rainforests, vibrant culture,
+              and unforgettable adventures on the beautiful island of Taniti.
+            </p>
+            <a href="#about" class="btn explore-btn">
+              START EXPLORING <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section section-pad">
+      <div class="container">
+        <div class="row justify-content-center">
+       
+          <div class="col-lg-10">
+            <div class="section-label"><i class="bi bi-leaf"></i> ABOUT TANITI</div>
+            <h2>The Heart of Paradise</h2>
+            <p class="about-copy">
+              Taniti is a breathtaking island where natural beauty and warm hospitality come together.
+              From crystal-clear waters to towering mountains, every corner of Taniti offers something extraordinary.
+            </p>
+
+            <div class="row g-4 mt-3">
+              <div class="col-md-4">
+                <div class="feature-inline">
+                  <span class="feature-icon"><i class="bi bi-water"></i></span>
+                  <div>
+                    <h3>Pristine Beaches</h3>
+                    <p>Relax on beautiful white sand beaches around Yellow Leaf Bay.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="feature-inline">
+                  <span class="feature-icon"><i class="bi bi-mountains"></i></span>
+                  <div>
+                    <h3>Lush Nature</h3>
+                    <p>Explore rainforest trails, waterfalls, and Taniti's active volcano.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="feature-inline">
+                  <span class="feature-icon"><i class="bi bi-people"></i></span>
+                  <div>
+                    <h3>Warm Culture</h3>
+                    <p>Experience local traditions, native architecture, dining, and island hospitality.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a href="about.html" class="text-cta">Learn more about Taniti <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LODGING -->
+    <section id="lodging" class="lodging-section section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="section-label light-label"><i class="bi bi-bed"></i> LODGING</div>
+            <h2>Stay in Island Comfort</h2>
+            <p>
+              From budget-friendly stays to charming family-run hotels and a four-star resort,
+              Taniti offers comfortable lodging for every type of traveler.
+            </p>
+            <a href="lodging.html" class="btn outline-light-btn">
+              VIEW LODGING OPTIONS <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-7">
+            <img src="assets/lodging.svg" class="img-fluid lodging-image" alt="Taniti lodging placeholder">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPORTATION -->
+    <section id="transportation" class="transportation-section section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label"><i class="bi bi-bus-front"></i> TRANSPORTATION</div>
+          <h2>Easy Ways to Explore Taniti</h2>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg">
+            <div class="transport-card">
+              <i class="bi bi-airplane-fill"></i>
+              <h3>By Air</h3>
+              <p>Most visitors arrive through Taniti's small airport.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <div class="transport-card">
+              <i class="bi bi-car-front-fill"></i>
+              <h3>By Car</h3>
+              <p>Rental cars are available from a local agency near the airport.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <div class="transport-card">
+              <i class="bi bi-bus-front-fill"></i>
+              <h3>By Bus</h3>
+              <p>Public buses serve Taniti City from 5 a.m. to 11 p.m.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <div class="transport-card">
+              <i class="bi bi-taxi-front-fill"></i>
+              <h3>By Taxi</h3>
+              <p>Taxis are available throughout Taniti City.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg">
+            <div class="transport-card">
+              <i class="bi bi-bicycle"></i>
+              <h3>By Bike</h3>
+              <p>Bikes and required helmets are available to rent.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="transportation.html" class="text-cta">View transportation details <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTERTAINMENT -->
+    <section id="entertainment" class="entertainment-section section-pad">
+      <div class="container">
+        <div class="section-heading d-flex align-items-center gap-3">
+          <div class="section-label mb-0"><i class="bi bi-star"></i> ENTERTAINMENT</div>
+          <h2 class="mb-0">Unforgettable Experiences</h2>
+        </div>
+
+        <div id="experienceCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-4 overflow-hidden">
+            <div class="carousel-item active">
+              <div class="row g-0">
+                <div class="col-md-4 experience-card">
+                  <img src="assets/snorkeling.svg" alt="Snorkeling placeholder">
+                  <div class="experience-overlay"></div>
+                  <div class="experience-title">Snorkeling & Diving</div>
+                </div>
+                <div class="col-md-4 experience-card">
+                  <img src="assets/waterfall.svg" alt="Rainforest adventure placeholder">
+                  <div class="experience-overlay"></div>
+                  <div class="experience-title">Island Adventures</div>
+                </div>
+                <div class="col-md-4 experience-card">
+                  <img src="assets/dining.svg" alt="Dining placeholder">
+                  <div class="experience-overlay"></div>
+                  <div class="experience-title">Local Dining & Nightlife</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev custom-control" type="button"
+                  data-bs-target="#experienceCarousel" data-bs-slide="prev">
+            <span class="circle-control"><i class="bi bi-chevron-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next custom-control" type="button"
+                  data-bs-target="#experienceCarousel" data-bs-slide="next">
+            <span class="circle-control"><i class="bi bi-chevron-right"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="entertainment.html" class="text-cta">Explore all activities <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ CTA -->
+    <section class="faq-cta-section">
+      <div class="container">
+        <div class="faq-banner">
+          <div class="faq-left">
+            <div class="faq-icon"><i class="bi bi-question-circle"></i></div>
+            <div>
+              <h2>Have Questions?</h2>
+              <p>We're here to help make your Taniti vacation amazing.</p>
+            </div>
+          </div>
+
+          <a href="faq.html" class="btn faq-btn">
+            VIEW FAQS <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-3">
+          <a class="footer-brand" href="#home">
+            <span class="brand-icon"><i class="bi bi-tree-fill"></i></span>
+            <span class="brand-text">
+              <small>VISIT</small>
+              <strong>TANITI</strong>
+            </span>
+          </a>
+          <p class="footer-tagline">Your perfect island escape</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h3>EXPLORE</h3>
+          <a href="about.html">About Taniti</a>
+          <a href="lodging.html">Lodging</a>
+          <a href="transportation.html">Transportation</a>
+          <a href="entertainment.html">Entertainment</a>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h3>TRIP PLANNING</h3>
+          <a href="reserve.html">Reserve Now</a>
+          <a href="faq.html">Travel Tips</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+
+        <div class="col-lg-2">
+          <h3>CONTACT</h3>
+          <p>Taniti Visitor Center<br>info@visittaniti.com<br>+1 (555) 123-4567</p>
+        </div>
+
+        <div class="col-lg-3">
+          <img src="assets/footer.svg" class="img-fluid footer-image" alt="Taniti sunset placeholder">
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        © 2026 Visit Taniti. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
