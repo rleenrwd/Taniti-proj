@@ -1,6 +1,4 @@
-/* =========================
-   TANITI HOMEPAGE
-   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Kablammo&family=Schoolbell&display=swap');
 
 :root{
   --navy:#071821;
@@ -11,6 +9,7 @@
   --ink:#16242d;
   --muted:#69747a;
   --white:#fff;
+  --header-fonts: "Inika";
 }
 
 *{box-sizing:border-box}
@@ -19,7 +18,7 @@ html{scroll-behavior:smooth}
 
 body{
   margin:0;
-  font-family:"Segoe UI",Arial,sans-serif;
+  font-family: "Segoe UI",Arial,sans-serif;
   color:var(--ink);
   background:#fff;
 }
@@ -64,6 +63,7 @@ h2{
   line-height:1;
   letter-spacing:.12em;
   color:white;
+  font-family: "Schoolbell" ;
 }
 
 .brand-text small{
@@ -101,74 +101,102 @@ h2{
 .reserve-btn:hover{background:#0d9996;color:#fff}
 
 /* Hero */
+
 .hero-section {
   margin-top: 78px;
-  padding: 45px 0;
-  background: var(--white);
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.hero-section .container {
+  max-width: 100%;
+  padding-left: 0;
+}
+
+.hero-image-column {
+  position: relative;
+  padding-left: 0;
 }
 
 .hero-image {
-  width: 90%;
+  width: 100%;
   height: 520px;
-  object-fit: cover;
   display: block;
-  margin: 0 auto;
-  border-radius: 0 60px 0 60px;
+  object-fit: cover;
+
+  clip-path: polygon(
+    0 0,
+    82% 0,
+    100% 50%,
+    82% 100%,
+    0 100%
+  );
 }
 
 .hero-content {
-  width: 100%;
-  padding: 4rem;
+  position: relative;
+  z-index: 2;
+  padding: 3rem 2rem 3rem 3rem;
 }
 
 .script-title {
+  margin: 0 0 .25rem;
   font-family: Georgia, serif;
-  font-style: italic;
-  color: #0ea5a8;
   font-size: 2.4rem;
-  margin-bottom: 0;
+  font-style: italic;
+  color: var(--teal);
 }
 
 .hero-content h1 {
-  font-size: clamp(4rem, 7vw, 6.5rem);
+  margin: 0 0 .75rem;
+  color: var(--navy);
+  font-size: clamp(4rem, 7vw, 6rem);
   font-weight: 900;
+  line-height: .95;
   letter-spacing: .04em;
-  color: #071821;
-  margin-bottom: .75rem;
+  font-family: var(--header-fonts);
 }
 
 .hero-content h2 {
-  font-size: 1.35rem;
-  color: #071821;
   margin-bottom: 1.5rem;
+  color: var(--navy);
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-left: 4rem;
 }
 
 .hero-copy {
-  color: #5f6c72;
-  line-height: 1.8;
-  max-width: 480px;
+  max-width: 440px;
   margin-bottom: 2rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 .explore-btn {
-  background: #10a7aa;
-  color: #fff;
-  border-radius: 4px;
   padding: 14px 26px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--teal);
+  color: var(--white);
   font-weight: 800;
 }
 
 .explore-btn:hover {
-  background: #087d80;
-  color: #fff;
+  background: var(--teal-dark);
+  color: var(--white);
 }
 
 /* About */
 .about-section{
-  background: var(--cream);
+  background: var(--white);
 }
 
-.about-section h2{font-size:2.6rem}
+.about-section h2{
+  font-size:2.5rem;
+  font-family: var(--header-fonts);
+}
 
 .about-copy{
   max-width:860px;
@@ -221,6 +249,7 @@ h2{
 .lodging-section h2{
   color:#fff;
   font-size:2.5rem;
+  font-family: var(--header-fonts);
 }
 
 .lodging-section p{
@@ -262,6 +291,7 @@ h2{
 .section-heading h2{
   margin:0;
   font-size:2rem;
+  font-family: var(--header-fonts);
 }
 
 .transport-card{
@@ -301,6 +331,10 @@ h2{
 
 /* Entertainment */
 .entertainment-section{background:#fff}
+
+.entertainment-section h2 {
+  font-family: var(--header-fonts);
+}
 
 .experience-card{
   position:relative;
@@ -377,6 +411,7 @@ h2{
   color:#fff;
   font-size:2rem;
   margin:0;
+  font-family: var(--header-fonts);
 }
 
 .faq-banner p{
@@ -477,18 +512,38 @@ h2{
     border-bottom:0;
   }
 
+  
+  .hero-section {
+    padding: 45px 0;
+  }
+
+  .hero-image-column {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .hero-image {
-    height: 420px;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center;
+    clip-path: none;
+    border-radius: 0 45px 0 45px;
+    margin: 0;
   }
 
   .hero-content {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 1rem;
     text-align: center;
   }
 
   .hero-copy {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero-content h2 {
+    margin-left: 0;
   }
 
   .section-heading{
