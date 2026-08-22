@@ -103,9 +103,10 @@ h2{
 /* Hero */
 
 .hero-section {
-  margin-top: 78px;
   background: var(--cream);
   overflow: hidden;
+  border-top: 4px solid var(--teal);
+  
 }
 
 .hero-section .container {
@@ -500,7 +501,6 @@ h2{
 .reserve-hero {
   background: var(--cream);
   padding: 70px 0 55px;
-
   border-top: 4px solid var(--teal);
 }
 
