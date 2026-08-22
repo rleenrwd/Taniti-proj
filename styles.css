@@ -418,74 +418,81 @@ h2{
 .faq-btn:hover{background:#eaf7f5;color:#075f63}
 
 /* Footer */
-.site-footer{
-  background:linear-gradient(90deg,#091922,#0d202a);
-  color:#fff;
-  padding:46px 0 0;
+.site-footer {
+  background: linear-gradient(
+    90deg,
+    #091922,
+    #0d202a
+  );
+
+  color: var(--white);
+
+  padding: 46px 0 0;
 }
 
-.footer-brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  text-decoration:none;
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 4rem;
+
+  padding-bottom: 34px;
 }
 
-.footer-tagline{
-  color:#c7d0d3;
-  margin:16px 0 12px;
+.footer-group {
+  flex: 1;
 }
 
-.socials{
-  display:flex;
-  gap:12px;
+.footer-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  text-decoration: none;
 }
 
-.socials a{
-  width:34px;
-  height:34px;
-  display:grid;
-  place-items:center;
-  border:1px solid #c4cbce;
-  color:#fff;
-  border-radius:50%;
+.footer-tagline {
+  color: #c7d0d3;
+
+  margin: 16px 0 0;
 }
 
-.site-footer h3{
-  font-size:.78rem;
-  color:#fff;
-  font-weight:800;
-  margin-bottom:14px;
+.footer-group h3 {
+  color: var(--white);
+
+  font-size: .78rem;
+  font-weight: 800;
+
+  margin-bottom: 14px;
 }
 
-.site-footer .col-6 a,
-.site-footer .col-lg-2 a{
-  display:block;
-  color:#d0d8db;
-  text-decoration:none;
-  font-size:.88rem;
-  margin-bottom:7px;
+.footer-group a:not(.footer-brand) {
+  display: block;
+
+  color: #d0d8db;
+
+  text-decoration: none;
+
+  font-size: .88rem;
+
+  margin-bottom: 7px;
 }
 
-.site-footer .col-6 a:hover,
-.site-footer .col-lg-2 a:hover{color:#16c2b3}
 
-.site-footer p{
-  color:#d0d8db;
-  font-size:.88rem;
-  line-height:1.7;
+.footer-group a:not(.footer-brand):hover {
+  color: var(--teal);
 }
 
-.footer-image{
-  border-radius:12px;
-}
+.footer-bottom {
+  padding: 16px 0;
 
-.footer-bottom{
-  margin-top:34px;
-  padding:14px 0;
-  border-top:1px solid rgba(255,255,255,.08);
-  color:#aeb8bc;
-  font-size:.8rem;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+
+  color: #aeb8bc;
+
+  font-size: .8rem;
 }
 
 /* Responsive */
@@ -567,5 +574,14 @@ h2{
 
   .experience-card img{
     height:230px;
+  }
+  .footer-top {
+    flex-direction: column;
+
+    gap: 2rem;
+  }
+
+  .footer-group {
+    width: 100%;
   }
 }
