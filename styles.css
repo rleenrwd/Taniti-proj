@@ -5,6 +5,8 @@
   --navy-2:#0b222a;
   --teal:#0ea5a8;
   --teal-dark:#087579;
+  --teal-darkest: linear-gradient(rgba(4,78,81,.94),rgba(5,91,93,.94)),
+    radial-gradient(circle at right top,#0a8d8f,#064f52);
   --cream:#f8f5ef;
   --ink:#16242d;
   --muted:#69747a;
@@ -100,12 +102,12 @@ h2{
 
 .reserve-btn:hover{background:#0d9996;color:#fff}
 
+/* Homepage*/
 /* Hero */
 
 .hero-section {
   background: var(--cream);
   overflow: hidden;
-  border-top: 4px solid var(--teal);
   
 }
 
@@ -242,9 +244,7 @@ h2{
 /* Lodging */
 .lodging-section{
   color:#fff;
-  background:
-    linear-gradient(rgba(4,78,81,.94),rgba(5,91,93,.94)),
-    radial-gradient(circle at right top,#0a8d8f,#064f52);
+  background: var(--teal-darkest);
 }
 
 .lodging-section h2{
@@ -661,17 +661,17 @@ h2{
 /* About Page */
 
 .about-page-header {
-  background: var(--cream);
+  background: var(--teal-darkest);
 
   padding: 70px 0 55px;
 
-  border-top: 4px solid var(--teal);
+  border-top: 4px solid var(--white);
 }
 
 .about-page-header h1 {
   font-family: var(--header-fonts);
 
-  color: var(--navy);
+  color: var(--white);
 
   font-size: clamp(2.4rem, 5vw, 4rem);
 
@@ -679,14 +679,14 @@ h2{
 }
 
 .about-page-header p {
-  color: var(--muted);
+  color: var(--white);
 
   margin: 0;
 }
 
 
 .about-page-content {
-  background: var(--white);
+  background: var(--cream);
 }
 
 .about-page-content h2 {
@@ -751,7 +751,7 @@ h2{
 
 
 .about-highlights {
-  background: var(--cream);
+  background: var(--white);
 
   padding: 55px 0;
 }
@@ -785,6 +785,348 @@ h2{
 
   color: var(--white);
 }
+
+/* Lodging Page */
+
+.lodging-page-header {
+  background: var(--teal-darkest);
+  padding: 70px 0 55px;
+  border-top: 4px solid var(--white);
+}
+
+.lodging-page-header h1 {
+  font-family: var(--header-fonts);
+  color: var(--white);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin-bottom: 14px;
+}
+
+.lodging-page-header p {
+  color: var(--white);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+
+
+/* Lodging Options */
+
+.lodging-options {
+  background: var(--cream);
+  padding: 60px 0;
+}
+
+.lodging-card {
+  background: var(--white);
+
+  padding: 32px 26px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(7, 24, 33, .08);
+
+  box-shadow:
+    0 8px 24px rgba(7, 24, 33, .08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lodging-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(7, 24, 33, .14);
+}
+
+.lodging-card-icon {
+  color: var(--teal);
+
+  font-size: 2rem;
+
+  margin-bottom: 16px;
+}
+
+.lodging-card h2 {
+  font-family: var(--header-fonts);
+
+  color: var(--navy);
+
+  font-size: 1.4rem;
+
+  margin-bottom: 12px;
+}
+
+.lodging-card p {
+  color: var(--muted);
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+.lodging-note {
+  max-width: 850px;
+
+  margin: 40px auto 0;
+
+  padding: 22px 26px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  background: var(--white);
+
+  border-radius: 12px;
+
+  border-left: 4px solid var(--teal);
+
+  box-shadow:
+    0 6px 18px rgba(7, 24, 33, .06);
+}
+
+.lodging-note > i {
+  color: var(--teal);
+
+  font-size: 2rem;
+}
+
+.lodging-note h3 {
+  color: var(--navy);
+
+  font-size: 1rem;
+
+  font-weight: 800;
+
+  margin-bottom: 4px;
+}
+
+.lodging-note p {
+  color: var(--muted);
+
+  margin: 0;
+
+  line-height: 1.6;
+}
+
+/* Transportation Page */
+.transport-page-header {
+  background: var(--teal-darkest);
+  padding: 70px 0 55px;
+  border-top: 4px solid var(--white);
+}
+
+.transport-page-header h1 {
+  font-family: var(--header-fonts);
+  color: var(--white);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin-bottom: 14px;
+}
+
+.transport-page-header p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+
+
+/* Transportation Options */
+
+.transport-page-options {
+  background: var(--cream);
+  padding: 60px 0;
+}
+
+.transport-page-card {
+  background: var(--white);
+
+  padding: 32px 26px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(7, 24, 33, .08);
+
+  box-shadow:
+    0 8px 24px rgba(7, 24, 33, .08);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.transport-page-card:hover {
+  transform: scale(1.04);
+
+  box-shadow:
+    0 12px 30px rgba(7, 24, 33, .14);
+}
+
+.transport-page-icon {
+  color: var(--teal);
+
+  font-size: 2rem;
+
+  margin-bottom: 16px;
+}
+
+.transport-page-card h2 {
+  font-family: var(--header-fonts);
+
+  color: var(--navy);
+
+  font-size: 1.4rem;
+
+  margin-bottom: 12px;
+}
+
+.transport-page-card p {
+  color: var(--muted);
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* Arrival Section */
+
+.arrival-section {
+  background: var(--white);
+
+  padding: 60px 0;
+}
+
+.arrival-section h2 {
+  font-family: var(--header-fonts);
+
+  color: var(--navy);
+
+  margin-bottom: 18px;
+}
+
+.arrival-section p {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+
+/* Entertainment Page */
+
+.entertainment-page-header {
+  background: var(--teal-darkest);
+  padding: 70px 0 55px;
+  border-top: 4px solid var(--white);
+}
+
+.entertainment-page-header h1 {
+  font-family: var(--header-fonts);
+  color: var(--white);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin-bottom: 14px;
+}
+
+
+.icon-span, .entertainment-page-header i {
+  color: var(--teal)
+}
+
+.entertainment-page-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+
+/* Activities */
+
+.entertainment-options {
+  background: var(--cream);
+  padding: 60px 0;
+}
+
+.entertainment-page-card {
+  background: var(--white);
+
+  padding: 32px 26px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(7, 24, 33, .08);
+
+  box-shadow:
+    0 8px 24px rgba(7, 24, 33, .08);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.entertainment-page-card:hover {
+  transform: scale(1.04);
+
+  box-shadow:
+    0 12px 30px rgba(7, 24, 33, .14);
+}
+
+.entertainment-page-icon {
+  color: var(--teal);
+
+  font-size: 2rem;
+
+  margin-bottom: 16px;
+}
+
+.entertainment-page-card h2 {
+  font-family: var(--header-fonts);
+
+  color: var(--navy);
+
+  font-size: 1.4rem;
+
+  margin-bottom: 12px;
+}
+
+.entertainment-page-card p {
+  color: var(--muted);
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* Merriton Landing */
+
+.merriton-section {
+  background: var(--white);
+
+  padding: 60px 0;
+}
+
+.merriton-section h2 {
+  font-family: var(--header-fonts);
+
+  color: var(--navy);
+
+  margin-bottom: 18px;
+}
+
+.merriton-section p {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
 
 /* Responsive */
 @media (max-width:991.98px){
@@ -881,5 +1223,18 @@ h2{
 
   .reserve-card p {
     min-height: auto;
+  }
+  .lodging-page-header {
+    padding: 55px 18px 40px;
+  }
+
+  .lodging-note {
+    align-items: flex-start;
+  }
+   .transport-page-header {
+    padding: 55px 18px 40px;
+  }
+   .entertainment-page-header {
+    padding: 55px 18px 40px;
   }
 }
