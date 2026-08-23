@@ -1,2 +1,4 @@
-# Taniti-proj
+# Discover Taniti
 Discover Taniti is a responsive tourism website prototype designed to provide visitors with a simple and intuitive way to explore the fictional island of Taniti. The site includes information about lodging, transportation, entertainment, visitor FAQs, and trip planning, with a responsive design for both desktop and mobile devices.
+
+## By Robert L. Norwood
