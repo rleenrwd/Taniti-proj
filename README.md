@@ -6,6 +6,14 @@ A responsive tourism website prototype for the fictional island of Taniti, desig
 
 https://rleenrwd.github.io/Taniti-proj/
 
+## Design Process
+
+The project began with UX planning and wireframing to establish the site's initial information architecture, navigation, page layouts, and user flows. The design was then evaluated through user testing, including guerrilla usability testing, with feedback used to refine the interface, content organization, and overall user experience. As a result, the final responsive website intentionally evolved from the original wireframe shown below.
+
+### Wireframe / Prototype
+<img width="595" height="760" alt="image" src="https://github.com/user-attachments/assets/1a289339-4aa7-425f-90e8-972eed364266" />
+
+
 ## Overview
 
 Discover Taniti was developed as a UX and front-end web development project focused on designing an intuitive travel experience for visitors to the fictional island of Taniti.
